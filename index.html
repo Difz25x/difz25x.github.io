@@ -1,1 +1,73 @@
-<html><head><title>Home</title></head><body><h1>Welcome to JaxCraft</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JaxCraft - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Admins.html">Admin</a></li>
+          <li><a href="Ranks.html">Ranks</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="Rules.html">Rules</a></li>
+          <li><a href="Donate.html">Donate</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+
+<script>
+    // JavaScript to toggle the navigation menu
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('open');
+    }
+</script>
+
+<header class="page-title">
+  <h2>🌟 Welcome to JaxCraft 🌟</h2>
+  <p>Your ultimate Minecraft adventure starts here!</p>
+  <button class="button" onclick="copyIP()">Copy IP: play.jaxcraft.net:19132</button>
+</header>
+
+<section class="page-title">
+    <h2>🏰 Your Adventure Begins Here</h2>
+    <p>Explore custom worlds, compete in battles, and join a growing community of Minecraft players.</p>
+</section>
+
+<section class="features-grid">
+    <div class="feature-card">
+        <h3>👑 Admin Team</h3>
+        <p>Meet the amazing people who run JaxCraft behind the scenes.</p>
+        <a href="Admins.html" class="btn">Meet Admins</a>
+    </div>
+    <div class="feature-card">
+        <h3>💼 Ranks</h3>
+        <p>Unlock awesome commands and perks with our exclusive ranks!</p>
+        <a href="Ranks.html" class="btn">View Ranks</a>
+    </div>
+    <div class="feature-card">
+        <h3>🛠️ Features</h3>
+        <p>Enjoy unique server features that enhance your gameplay.</p>
+        <a href="Features.html" class="btn">See Features</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 JaxCraft. All rights reserved.</p>
+</footer>
+
+<script>
+    function copyIP() {
+        navigator.clipboard.writeText("play.jaxcraft.net:19132").then(() => {
+            alert("Server IP copied!");
+        });
+    }
+</script>
+
+</body>
+</html>

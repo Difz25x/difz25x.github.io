@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JaxCraft - Donate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Admins.html">Admin</a></li>
+      <li><a href="Ranks.html">Ranks</a></li>
+      <li><a href="Features.html">Features</a></li>
+      <li><a href="Rules.html">Rules</a></li>
+      <li><a href="Donate.html">Donate</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+</nav>
+
+
+<script>
+    // JavaScript to toggle the navigation menu
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('open');
+    }
+</script>
+
+<section class="donate">
+  <h2>Support JaxCraft</h2>
+  <p>Help keep the server running by donating!</p>
+  <p><strong>Donation Methods:</strong></p>
+  <ul>
+    <li><strong>QRIS (All Payments):</strong> <a href="images/qris.png" target="_blank"><span class="unavailable">Click To View QR</span></a></li>
+    <li><strong>PayPal:</strong> <a href="mailto:donate@jaxcraft.net"><span class="unavailable">donate@jaxcraft.net</span></a></li>
+    <li><strong>GoPay:</strong> <a href="#" onclick="copyToClipboard('donate@jaxcraft.net')"><span class="available">donate@jaxcraft.net</span></a></li>
+    <li><strong>ShopeePay:</strong> <a href="#" onclick="copyToClipboard('+62 822-8533-2217')"><span class="available">+62 822-8533-2217</span></a></li>
+    <li><strong>Dana:</strong> <a href="#" onclick="copyToClipboard('+62 822-8533-2217')"><span class="available">+62 822-8533-2217</span></a></li>
+    <li><strong>OVO:</strong> <a href="#" onclick="copyToClipboard('+62 822-8533-2217')"><span class="unavailable">+62 822-8533-2217</span></a></li>
+  </ul>
+  <p>Every donation helps with server maintenance and improvements. Thank you!</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 JaxCraft. All rights reserved.</p>
+</footer>
+
+<script>
+  function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+          alert("Copied to clipboard");
+      }).catch(err => {
+          console.error("Failed to copy: ", err);
+      });
+  }
+  </script>
+
+</body>
+</html>
