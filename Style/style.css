@@ -342,6 +342,8 @@ main {
 
 .unavailable {
     text-decoration: line-through;
+    pointer-events: none;
+    cursor: default;
     color: #777;
 }
 
